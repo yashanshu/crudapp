@@ -22,7 +22,7 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
   }
 
   @Override
-  public List<Employee> finadAll() {
+  public List<Employee> findAll() {
     // get the current hibernate session
     Session currentSession = entityManager.unwrap(Session.class);
     // create a query
